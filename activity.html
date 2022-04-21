@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/activity.css">
+    <link rel="stylesheet" href="./node_modules/color-calendar/dist/css/theme-basic.css">
+    <link rel="stylesheet" href="./node_modules/color-calendar/dist/css/theme-glass.css">
+    <link rel="stylesheet" href="./node_modules/tui-calendar/dist/tui-calendar.min.css">
+    <link rel="stylesheet" href="./node_modules/tui-date-picker/dist/tui-date-picker.min.css">
+    <link rel="stylesheet" href="./node_modules/tui-time-picker/dist/tui-time-picker.min.css">
+    <link rel="stylesheet" href="./node_modules/fullcalendar/main.css">
+    <link rel="stylesheet" href="./node_modules/fullcalendar/locales-all.js">
+    <title>Activity</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-right">
+            <div class="nav-right-logo">
+                <i class="bi bi-bootstrap"></i>
+                Bare Mind
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="./dashboard.html"> <i class="bi bi-house-door"></i> Home</a></li>
+                <li class="nav-list-item"><a href="./post.html"> <i class="bi bi-person"></i> Meditation</a></li>
+                <li class="nav-list-item"><a href="./activity.html"> <i class="bi bi-moon"></i> Activity</a></li>
+                <li class="nav-list-item"><a href="./profile.html"> <i class="bi bi-person-fill"></i> Profile</a></li>
+                <li class="nav-list-item"><a href="#"> <i class="bi bi-person"></i> Body</a></li>
+                <li class="nav-list-item"><a href="#"> <i class="bi bi-music-note-beamed"></i> Music</a></li>
+                <li class="nav-list-item"><a href="#"> <i class="bi bi-people"></i> Community</a></li>
+            </ul>
+            <div class="nav-ads">
+                <span>Get the best of Bare Mind</span>
+                <button class="ads-button">Upgrade</button>
+            </div>
+        </div>
+
+        <div class="main-wrapper">
+            <!-- TOP NAV  -->
+            <div class="main-top-nav">
+                <div class="top-nav-title">
+                    <h2 class="">Activity</h2>
+                    <div class="mobile-toggle">
+                        <i class="bi bi-grid-fill"></i>
+                    </div>
+                </div>
+                <div class="top-nav">
+                    <div class="top-nav-img">
+                        <img src="./assets/image/user.png" alt="">
+                        <div class="name">
+                            <h4>Mahlodi Letsie</h4>
+                            <span> South Africa</span>
+                        </div>
+                    </div>
+                    <div class="top-nav-icon">
+                        <a href="#" class="icon">
+                            <i class="bi bi-bell"></i>
+                        </a>
+                        <a href="#" class="icon" >
+                            <i class="bi bi-chat-square-quote"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- TOP NAV -->
+
+            <!-- MAIN -->
+                <div class="main-body">
+                    <div class="main-body-left">
+                         <!--  -->
+                         <span class="section-title">
+                            <span>Quick Actions</span>
+                         </span>
+                        <!--  -->
+
+                        <div class="quick-action-container">
+                            <div class="quick-action-item">
+                                <div class="quick-action-icon">
+                                    <i class="bi bi-chat-dots"></i>
+                                </div>
+                                <div class="quick-action-text">
+                                    <p>Interview with Dr Mary Jone</p>
+                                    <span class="text-action">12 people watching</span>
+                                </div>
+                            </div>
+                            <div class="quick-action-item">
+                                <div class="quick-action-icon">
+                                    <i class="bi bi-person-workspace"></i>
+                                </div>
+                                <div class="quick-action-text">
+                                    <p>Interview with Dr Mary Jone</p>
+                                    <span class="text-action">12 people watching</span>
+                                </div>
+                            </div>
+                            <div class="quick-action-item">
+                                <div class="quick-action-icon">
+                                    <i class="bi bi-person-workspace"></i>
+                                </div>
+                                <div class="quick-action-text">
+                                    <p>Interview with Dr Mary Jone</p>
+                                    <span class="text-action">12 people watching</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="todays-calender">
+                            <div id="calendar"></div>
+                        </div>
+                        <!--  -->
+
+                    </div>
+                    <div class="main-body-right">
+                        <!--  -->
+                        <span class="section-title">
+                            <span>Calender</span>
+                         </span>
+                        <!--  -->
+                        <div id="color-calendar"></div>
+
+                        <!--  -->
+                        <span class="section-title">
+                            <span>Today's Result</span>
+                         </span>
+                        <!--  -->
+                        <div class="chart-container">
+                            <canvas id="myChart" width="250" height="250"></canvas>
+                        </div>
+                        <!--  -->
+                        <span class="section-title">
+                            <span>Your Goals</span>
+                         </span>
+                        <!--  -->
+                        <div class="goal-container">
+                            <div class="goal-item">
+                                <div class="goal-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="goal-detail">
+                                    <span class="goal-title">Meditate 3 times daily</span>
+                                    <div class="progress-container">
+                                        <div class="progress-track bg-green"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goal-item">
+                                <div class="goal-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="goal-detail">
+                                    <span class="goal-title">Meditate 3 times daily</span>
+                                    <div class="progress-container">
+                                        <div class="progress-track bg-red"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goal-item">
+                                <div class="goal-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="goal-detail">
+                                    <span class="goal-title">Meditate 3 times daily</span>
+                                    <div class="progress-container">
+                                        <div class="progress-track bg-blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- MAIN -->
+        </div>
+    </div>
+</body>
+
+<script src="./assets/js/jq.js"></script>
+<!-- <script src="./node_modules/jquery/src/jquery.js"></script> -->
+<script src="./node_modules/color-calendar/dist/bundle.js"></script>
+<script src="./node_modules/tui-calendar/dist/tui-calendar.min.js"></script>
+<script src="./node_modules/fullcalendar/main.js"></script>
+<script src="./node_modules/tui-time-picker/dist/tui-time-picker.min.js"></script>
+<script src="./node_modules/tui-date-picker/dist/tui-date-picker.min.js"></script>
+<script src="./node_modules/chart.js/dist/chart.min.js"></script>
+<script src="./assets/js/calender.js"></script>
+<script src="./assets/js/chart.js"></script>
+<script src="./assets/js/main.js"></script>
+</html>

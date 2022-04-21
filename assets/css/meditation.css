@@ -1,0 +1,27 @@
+.main-body{
+    margin: 20px 0; 
+}
+.suggestion-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+}
+.suggestion{
+    width: unset !important;
+    display: unset !important;
+}
+.suggestion-media{
+    height: 125px;
+}
+
+@media only screen and (max-width: 900px){
+    .suggestion-container{grid-template-columns: repeat(3, 1fr);}
+    .suggestion-media{height: 150px;}
+}
+@media only screen and (max-width: 500px){
+    .suggestion-container{grid-template-columns: repeat(2, 1fr);}
+}
+@media only screen and (max-width: 400px){
+    .suggestion-container{grid-template-columns: repeat(1, 1fr);}
+    .suggestion-media{height: 180px;}
+}
