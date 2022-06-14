@@ -234,3 +234,12 @@ border: none;
     background: green;
     color: #fff;
 }
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 500px){
+
+}
+@media only screen and (maxwidth: 400px){
+    
+}
